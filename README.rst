@@ -1,5 +1,5 @@
-COVID 19
-========
+COVID 19 (my data analysis)
+===========================
 
 Introduction
 ------------
@@ -18,20 +18,21 @@ We must act together to flatten the curves!!
 Disclaimer
 ----------
 I may be wrong in the maths. Let me know...
+Tell me if you want to see other countries...
 
 
 Situation on 2020-03-23
 -----------------------
 
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-23.png
-   :scale: 25
+   :width: 400
    :align: left
 .. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-23.png
-   :scale: 25
+   :width: 400
    :align: right
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-23.png
-   :scale: 50
+   :width: 400
    :align: left
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-23.png
-   :scale: 50
+   :width: 400
    :align: right
