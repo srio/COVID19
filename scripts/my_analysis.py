@@ -90,8 +90,8 @@ def analyze_country(country1):
 
      t11 = numpy.concatenate((t1,numpy.array([1,2])))
 
-     todayC = expo2(0,poptC[0], poptC[1])
-     todayD = expo2(0,poptD[0], poptD[1])
+     todayC = c1[-1]
+     todayD = d1[-1]
      tomorrowC = expo2(1,poptC[0], poptC[1])
      tomorrowD = expo2(1,poptD[0], poptD[1])
 
