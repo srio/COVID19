@@ -121,9 +121,10 @@ def analyze_country(country1):
      plt.show()
 
 if __name__ == "__main__":
-     italy_vs_spain()
+     # italy_vs_spain()
      analyze_country("Spain")
      analyze_country("France")
      analyze_country("Italy")
      analyze_country("US")
+     # analyze_country("Canada")
      
