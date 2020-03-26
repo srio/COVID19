@@ -20,19 +20,20 @@ Disclaimer
 I may be wrong in the maths. Let me know...
 Tell me if you want to see other countries...
 
+Situation on 2020-03-24
+-----------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-24.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-24.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-24.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-24.png
+
 
 Situation on 2020-03-23
 -----------------------
 
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-23.png
-   :width: 400
-   :align: left
 .. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-23.png
-   :width: 400
-   :align: right
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-23.png
-   :width: 400
-   :align: left
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-23.png
-   :width: 400
-   :align: right
+
