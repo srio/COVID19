@@ -20,6 +20,23 @@ Disclaimer
 I may be wrong in the maths. Let me know...
 Tell me if you want to see other countries...
 
+Evolution of the time for doubling the cases/deaths
+---------------------------------------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_x2.png
+
+Situation on 2020-03-24
+-----------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-25.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-25.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-25.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-25.png
+
+
 Situation on 2020-03-24
 -----------------------
 
