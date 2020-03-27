@@ -20,6 +20,14 @@ Disclaimer
 I may be wrong in the maths. Let me know...
 Tell me if you want to see other countries...
 
+New cases/deaths
+----------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_new_cases.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_new_cases.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_new_cases.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_new_cases.png
+
 Evolution of the time for doubling the cases/deaths
 ---------------------------------------------------
 
