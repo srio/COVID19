@@ -181,28 +181,38 @@ def model_analysis(country1):
      plt.show()
 
 def new_cases(country1):
-    t1, c1, d1 = get_country(country1, day=0, number_of_past_days=45)
+    t1, c1, d1 = get_country(country1, day=0, number_of_past_days=15)
 
-    plot(t1[1:], c1[1:]-c1[0:-1], t1[1:], d1[1:]-d1[0:-1],
-         xtitle="Days from today %s" % date.today(),
-         ytitle="Cases/deaths per day",
-         title=country1,
-         legend=["New cases","New deaths"])
+    # plot(t1[1:], c1[1:]-c1[0:-1], t1[1:], d1[1:]-d1[0:-1],
+    #      xtitle="Days from today %s" % date.today(),
+    #      ytitle="Cases/deaths per day",
+    #      title=country1,
+    #      legend=["New cases","New deaths"])
+
+    plt.bar(t1[1:], c1[1:]-c1[0:-1])
+    plt.bar(t1[1:], d1[1:] - d1[0:-1], )
+    plt.title(country1)
+    plt.xlabel("Days from today %s" % date.today())
+    plt.ylabel("Cases/deaths per day")
+    plt.legend(labels=['Cases', 'Deaths'])
+    # plt.grid(True)
+    filepng = "../figures/%s_new_cases.png" % country1
+    plt.savefig(filepng)
+    print("File %s written to disk" % filepng)
+    plt.show()
 
 
 
 if __name__ == "__main__":
 
 
+    for country1 in ["Spain","Italy","France","US"]:
+        new_cases(country1)
 
+    for country1 in ["Spain","Italy","France","US"]:
+        analyze_country(country1)
 
-    # for country1 in ["Spain","Italy","France","US"]:
-    #     new_cases(country1)
-
-    # for country1 in ["Spain","Italy","France","US"]:
-    #     analyze_country(country1)
-
-    # italy_vs_spain()
+    italy_vs_spain()
 
     for country1 in ["Spain","Italy","France","US"]:
         model_analysis(country1)
