@@ -36,6 +36,15 @@ Evolution of the time for doubling the cases/deaths
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_x2.png
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_x2.png
 
+Situation on 2020-03-28
+-----------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-28.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-28.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-28.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-28.png
+
+
 Situation on 2020-03-27
 -----------------------
 
@@ -70,11 +79,5 @@ Situation on 2020-03-24
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-24.png
 
 
-Situation on 2020-03-23
------------------------
 
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-23.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-23.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-23.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-23.png
 
