@@ -11,14 +11,18 @@ In a logarithmic plot, an exponential curve looks as a straigh line. The pendent
 
 .. image:: https://github.com/srio/COVID19/blob/master/figures/italy_vs_spain.png
 
-In the following anaysis, I make a plot per country (Spain, France, Italy and US) displaying the situation up to now, make a fit of the last days to calculate the increasing ratio (number of days in which it doubles) and extrapolate for tomorrow. Hopefully, because we are at home #quedateencasa the raio will be reduced in the next days so we will approach the stabilization. 
+In the following anaysis, I make a plot per country (Spain, France, Italy and US) displaying the situation up to now, make a fit of the last days to calculate the increasing ratio (number of days in which it doubles) and extrapolate for tomorrow. Hopefully, because we are at home #quedateencasa the ratio will be reduced in the next days so we will approach the stabilization. 
 
 We must act together to flatten the curves!! 
 
-Disclaimer
-----------
-I may be wrong in the maths. Let me know...
-Tell me if you want to see other countries...
+
+Evolution of the time for doubling the cases/deaths
+---------------------------------------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_x2.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_x2.png
 
 New cases/deaths
 ----------------
@@ -28,13 +32,15 @@ New cases/deaths
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_new_cases.png
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_new_cases.png
 
-Evolution of the time for doubling the cases/deaths
----------------------------------------------------
 
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_x2.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_x2.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_x2.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_x2.png
+
+Situation on 2020-03-29
+-----------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-29.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-29.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-29.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-29.png
 
 Situation on 2020-03-28
 -----------------------
@@ -70,13 +76,7 @@ Situation on 2020-03-25
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-25.png
 
 
-Situation on 2020-03-24
------------------------
 
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-24.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-24.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-24.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-24.png
 
 
 
