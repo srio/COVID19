@@ -82,8 +82,11 @@ def analyze_country(country1,day=0,do_plot=True):
 
      t11 = numpy.concatenate((t1,numpy.array([1,2])))
 
+
      todayC = c1[-1]
      todayD = d1[-1]
+     yesterdayC = c1[-2]
+     yesterdayD = d1[-2]
      tomorrowC = expo2(1,poptC[0], poptC[1])
      tomorrowD = expo2(1,poptD[0], poptD[1])
 
@@ -96,11 +99,12 @@ def analyze_country(country1,day=0,do_plot=True):
               legend=["Cases","Deaths",
                       "Cases double in %2.1f days"%poptC[0],"Deaths double in %2.1f days"%poptD[0],],
               xtitle="Days from today (%s)" % date.today(),
-              title="%s (%s): %d cases %d deaths, \n prediction tomorrow: %d cases (+%d) %d deaths (+%d)"%\
+              title="%s (%s): %d cases (+%d); %d (+%d) deaths, \n prediction tomorrow: +%d cases;  +%d deaths "%\
                     (country1,date.today(),
                      todayC,todayD,
-                     tomorrowC,tomorrowC-todayC,
-                     tomorrowD,tomorrowD-todayD),
+                     todayC-yesterdayC, todayD-yesterdayD,
+                     expo2(1,poptC[0], poptC[1])-expo2(0,poptC[0], poptC[1]),
+                     expo2(1,poptD[0], poptD[1])-expo2(0,poptD[0], poptD[1])),
               ytitle="cases/deaths",
               linestyle=["solid","solid","dashed","dashed"],
               show=0)
@@ -206,14 +210,14 @@ def new_cases(country1):
 if __name__ == "__main__":
 
 
-    for country1 in ["Spain","Italy","France","US"]:
-        new_cases(country1)
+    # for country1 in ["Spain","Italy","France","US"]:
+    #     new_cases(country1)
 
     for country1 in ["Spain","Italy","France","US"]:
         analyze_country(country1)
 
-    italy_vs_spain()
-
-    for country1 in ["Spain","Italy","France","US"]:
-        model_analysis(country1)
+    # italy_vs_spain()
+    #
+    # for country1 in ["Spain","Italy","France","US"]:
+    #     model_analysis(country1)
      
