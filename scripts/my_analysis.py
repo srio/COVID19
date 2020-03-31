@@ -210,14 +210,14 @@ def new_cases(country1):
 if __name__ == "__main__":
 
 
-    # for country1 in ["Spain","Italy","France","US"]:
-    #     new_cases(country1)
+    for country1 in ["Spain","Italy","France","US"]:
+        new_cases(country1)
 
     for country1 in ["Spain","Italy","France","US"]:
         analyze_country(country1)
 
-    # italy_vs_spain()
-    #
-    # for country1 in ["Spain","Italy","France","US"]:
-    #     model_analysis(country1)
+    italy_vs_spain()
+
+    for country1 in ["Spain","Italy","France","US"]:
+        model_analysis(country1)
      
