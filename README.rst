@@ -32,6 +32,15 @@ New cases/deaths
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_new_cases.png
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_new_cases.png
 
+Situation on 2020-04-01
+-----------------------
+
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-01.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-01.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-01.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-01.png
+
+
 Situation on 2020-03-31
 -----------------------
 
@@ -65,13 +74,7 @@ Situation on 2020-03-28
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-28.png
 
 
-Situation on 2020-03-27
------------------------
 
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-27.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-27.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-27.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-27.png
 
 
 
