@@ -101,8 +101,8 @@ def analyze_country(country1,day=0,do_plot=True):
               xtitle="Days from today (%s)" % date.today(),
               title="%s (%s): %d cases (+%d); %d (+%d) deaths, \n prediction tomorrow: +%d cases;  +%d deaths "%\
                     (country1,date.today(),
-                     todayC,todayD,
-                     todayC-yesterdayC, todayD-yesterdayD,
+                     todayC,todayC-yesterdayC,
+                     todayD,todayD-yesterdayD,
                      expo2(1,poptC[0], poptC[1])-expo2(0,poptC[0], poptC[1]),
                      expo2(1,poptD[0], poptD[1])-expo2(0,poptD[0], poptD[1])),
               ytitle="cases/deaths",
