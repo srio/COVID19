@@ -40,39 +40,6 @@ Situation on 2020-04-02
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-02.png
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-02.png
 
-Situation on 2020-04-01
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-01.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-01.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-01.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-01.png
-
-
-Situation on 2020-03-31
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-31.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-31.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-31.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-31.png
-
-Situation on 2020-03-30
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-30.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-30.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-30.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-30.png
-
-Situation on 2020-03-29
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-03-29.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-03-29.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-03-29.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-03-29.png
-
 
 
 
