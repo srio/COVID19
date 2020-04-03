@@ -166,7 +166,7 @@ def model_analysis(country1):
           legend=["Double-days Cases", "Double-days Deaths"],marker=['o','o'],
           title=country1,
           xtitle="Days from today %s" % date.today(),
-          yrange=[1,9],
+          # yrange=[1,9],
           show=0)
      plt.grid(True)
      filepng = "../figures/%s_x2.png"%country1
