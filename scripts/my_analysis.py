@@ -17,14 +17,18 @@ def get_country(name="Spain",number_of_past_days=29,day=0):
 
      ifound = -1
      for i in range(len(a)):
-          country1 = (a[i].split(","))[1]
-          if country1 == name:
+          tmp = a[i].split(",")
+          country1 = tmp[1]
+          blank = tmp[0]
+
+          if blank == "" and country1 == name:
                ifound = i
                # break
 
      if ifound < 0:
           raise Exception("country key not found")
 
+     # print(">>>>",a[ifound])
      spain=a[ifound].split(",")
      spainD=b[ifound].split(",")
 
@@ -37,6 +41,8 @@ def get_country(name="Spain",number_of_past_days=29,day=0):
 
      uptoday = numpy.linspace(-len(spain), 0, len(spain) + 1)
      t = uptoday[-number_of_past_days:]
+     # if name == "France":
+     #     s = s - 20000
      return t,s,sD
 
 def italy_vs_spain():
@@ -149,17 +155,17 @@ def model_analysis(country1):
          tomorrowC_old, tomorrowD_old, todayC_old, todayD_old = tomorrowC, tomorrowD, todayC, todayD
 
 
-     plot(out[:, 0]+1, out[:, 1],
-          out[:, 0]+1, out[:, 2],
-          out[:, 0], out[:, 3],
-          out[:, 0], out[:, 4],
-          legend=["Prevision Cases","Prevision Deaths","Cases","Deaths"],ylog=1,
-          title=country1,
-          xtitle="Days from today %s"%date.today(),
-          yrange=[10**1,10**5],
-          show=0)
-     # plt.savefig(country1+"_1.png")
-     plt.show()
+     # plot(out[:, 0]+1, out[:, 1],
+     #      out[:, 0]+1, out[:, 2],
+     #      out[:, 0], out[:, 3],
+     #      out[:, 0], out[:, 4],
+     #      legend=["Prevision Cases","Prevision Deaths","Cases","Deaths"],ylog=1,
+     #      title=country1,
+     #      xtitle="Days from today %s"%date.today(),
+     #      yrange=[10**1,10**5],
+     #      show=0)
+     # # plt.savefig(country1+"_1.png")
+     # plt.show()
 
      plot(out[:, 0], out[:, 5],
           out[:, 0], out[:, 6],
@@ -174,18 +180,20 @@ def model_analysis(country1):
      print("File %s written to disk"%filepng)
      plt.show()
 
-     plot(out[:, 0], out[:, 7] / out[:, 3],
-          out[:, 0], out[:, 8] / out[:, 4],
-          legend=["Error Cases/Cases", "Error Deaths/Deaths"],marker=['o','o'],
-          title=country1,
-          xtitle="Days from today %s" % date.today(),
-          yrange=[-0.75,0.75],
-          show=0)
-     # plt.savefig(country1+"_3.png")
-     plt.show()
+     # plot(out[:, 0], out[:, 7] / out[:, 3],
+     #      out[:, 0], out[:, 8] / out[:, 4],
+     #      legend=["Error Cases/Cases", "Error Deaths/Deaths"],marker=['o','o'],
+     #      title=country1,
+     #      xtitle="Days from today %s" % date.today(),
+     #      yrange=[-0.75,0.75],
+     #      show=0)
+     # # plt.savefig(country1+"_3.png")
+     # plt.show()
 
 def new_cases(country1):
     t1, c1, d1 = get_country(country1, day=0, number_of_past_days=15)
+    # if country1 == "France":
+    #     c1[-1] = c1[-1] - 20000
 
     # plot(t1[1:], c1[1:]-c1[0:-1], t1[1:], d1[1:]-d1[0:-1],
     #      xtitle="Days from today %s" % date.today(),
@@ -210,14 +218,14 @@ def new_cases(country1):
 if __name__ == "__main__":
 
 
-    for country1 in ["Spain","Italy","France","US"]:
+    for country1 in  ["France","Spain","Italy","US"]:
         new_cases(country1)
 
-    for country1 in ["Spain","Italy","France","US"]:
+    for country1 in ["France","Spain","Italy","US"]:
         analyze_country(country1)
 
     italy_vs_spain()
 
-    for country1 in ["Spain","Italy","France","US"]:
+    for country1 in ["France","Spain","Italy","US"]:
         model_analysis(country1)
      
