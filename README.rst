@@ -32,37 +32,14 @@ New cases/deaths
 .. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_new_cases.png
 .. image:: https://github.com/srio/COVID19/blob/master/figures/US_new_cases.png
 
-Situation on 2020-04-11
------------------------
+Curves
+------
 
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-11.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-11.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-11.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-11.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_plot.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/France_plot.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_plot.png
+.. image:: https://github.com/srio/COVID19/blob/master/figures/US_plot.png
 
-Situation on 2020-04-10
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-10.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-10.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-10.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-10.png
-
-Situation on 2020-04-09
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-09.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-09.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-09.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-09.png
-
-Situation on 2020-04-08
------------------------
-
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Spain_2020-04-08.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/France_2020-04-08.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/Italy_2020-04-08.png
-.. image:: https://github.com/srio/COVID19/blob/master/figures/US_2020-04-08.png
 
 
 
