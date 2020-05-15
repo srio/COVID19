@@ -117,7 +117,7 @@ def analyze_country(country1,day=0,do_plot=True):
 
          plt.grid(b=True, which="major")
          plt.grid(b=True, which="minor")
-         filepng = "../figures/%s_%s.png" % (country1,date.today())
+         filepng = "../figures/%s_plot.png" % (country1)
          plt.savefig(filepng)
          print("File %s written to file." % filepng)
          plt.show()
@@ -201,12 +201,12 @@ def new_cases(country1):
     #      title=country1,
     #      legend=["New cases","New deaths"])
 
-    plt.bar(t1[1:], c1[1:]-c1[0:-1])
+    plt.bar(t1[1:], c1[1:] - c1[0:-1])
     plt.bar(t1[1:], d1[1:] - d1[0:-1], )
     plt.title(country1)
     plt.xlabel("Days from today %s" % date.today())
     plt.ylabel("Cases/deaths per day")
-    plt.legend(labels=['Cases', 'Deaths'])
+    plt.legend(labels=['Cases (+%d)' % (c1[1:] - c1[0:-1])[-1], 'Deaths (+%d)' % (d1[1:] - d1[0:-1])[-1]])
     # plt.grid(True)
     filepng = "../figures/%s_new_cases.png" % country1
     plt.savefig(filepng)
