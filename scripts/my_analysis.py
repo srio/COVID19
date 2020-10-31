@@ -131,8 +131,8 @@ def model_analysis(country1):
      print("day   tomorrowC    tomorrowD      todayC        todayD    real-prevision   real-prevision  coeC coeD")
 
      tomorrowC_old, tomorrowD_old, todayC_old, todayD_old = 0,0,0,0
-     ndays = 15
-     out = numpy.zeros((15,9))
+     ndays = 45
+     out = numpy.zeros((ndays,9))
      for i,day in enumerate(range(0,-ndays,-1)):
          tomorrowC, tomorrowD, todayC, todayD, poptC,poptD = analyze_country(country1,do_plot=False,day=day)
          print("%2d   %d         %d         %d      %d     %d    %d   %2.1f  %2.1f"%\
@@ -167,12 +167,17 @@ def model_analysis(country1):
      # # plt.savefig(country1+"_1.png")
      # plt.show()
 
+     if (out[:, 6]).max() > 3000:
+         yrange=[0,3000]
+     else:
+         yrange = None
+
      plot(out[:, 0], out[:, 5],
           out[:, 0], out[:, 6],
           legend=["Double-days Cases", "Double-days Deaths"],marker=['o','o'],
           title=country1,
           xtitle="Days from today %s" % date.today(),
-          # yrange=[1,9],
+          yrange=yrange,
           show=0)
      plt.grid(True)
      filepng = "../figures/%s_x2.png"%country1
@@ -202,11 +207,11 @@ def new_cases(country1):
     #      legend=["New cases","New deaths"])
 
     plt.bar(t1[1:], c1[1:] - c1[0:-1])
-    plt.bar(t1[1:], d1[1:] - d1[0:-1], )
-    plt.title(country1)
+    plt.bar(t1[1:], 10 * (d1[1:] - d1[0:-1]), )
+    plt.title(country1 + " Cases (+%d); Deaths (+%d)" % ((c1[1:] - c1[0:-1])[-1], (d1[1:] - d1[0:-1])[-1]))
     plt.xlabel("Days from today %s" % date.today())
-    plt.ylabel("Cases/deaths per day")
-    plt.legend(labels=['Cases (+%d)' % (c1[1:] - c1[0:-1])[-1], 'Deaths (+%d)' % (d1[1:] - d1[0:-1])[-1]])
+    plt.ylabel("Cases (blue) or 10*deaths (orange) per day")
+    plt.legend(labels=['Cases', '10 * Deaths'])
     # plt.grid(True)
     filepng = "../figures/%s_new_cases.png" % country1
     plt.savefig(filepng)
@@ -218,14 +223,14 @@ def new_cases(country1):
 if __name__ == "__main__":
 
 
-    for country1 in  ["France","Spain","Italy","US"]:
+    for country1 in  ["France","Spain","Italy","US","Switzerland"]:
         new_cases(country1)
 
-    for country1 in ["France","Spain","Italy","US"]:
+    for country1 in ["France","Spain","Italy","US","Switzerland"]:
         analyze_country(country1)
 
-    italy_vs_spain()
+    # italy_vs_spain()
 
-    for country1 in ["France","Spain","Italy","US"]:
+    for country1 in ["France","Spain","Italy","US","Switzerland"]:
         model_analysis(country1)
      
